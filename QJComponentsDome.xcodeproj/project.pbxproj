@@ -16,7 +16,6 @@
 		187B752626CB7C4D007B29B8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 187B751726CB7C4D007B29B8 /* Main.storyboard */; };
 		187B752726CB7C4D007B29B8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 187B751D26CB7C4D007B29B8 /* main.m */; };
 		187B752826CB7C4D007B29B8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 187B751E26CB7C4D007B29B8 /* AppDelegate.m */; };
-		187B752926CB7C4D007B29B8 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 187B751F26CB7C4D007B29B8 /* Info.plist */; };
 		187B752C26CB7C89007B29B8 /* UIViewController+PPPresentTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 187B752B26CB7C89007B29B8 /* UIViewController+PPPresentTransition.m */; };
 		187B752F26CB7CCB007B29B8 /* PPMultiTargetProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 187B752D26CB7CCB007B29B8 /* PPMultiTargetProxy.m */; };
 		187B753D26CB81BF007B29B8 /* PPTapMenumContainerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 187B753126CB81BF007B29B8 /* PPTapMenumContainerView.m */; };
@@ -331,7 +330,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				187B752926CB7C4D007B29B8 /* Info.plist in Resources */,
 				187B752626CB7C4D007B29B8 /* Main.storyboard in Resources */,
 				187B752226CB7C4D007B29B8 /* Assets.xcassets in Resources */,
 				187B752526CB7C4D007B29B8 /* LaunchScreen.storyboard in Resources */,
@@ -542,7 +540,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = QJComponentsDome/Info.plist;
+				INFOPLIST_FILE = "$(PROJECT_DIR)/QJComponentsDome/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -559,7 +557,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = QJComponentsDome/Info.plist;
+				INFOPLIST_FILE = "$(PROJECT_DIR)/QJComponentsDome/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
