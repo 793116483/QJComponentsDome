@@ -23,6 +23,7 @@
 		187B753F26CB81BF007B29B8 /* PPTapMenumBaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 187B753626CB81BF007B29B8 /* PPTapMenumBaseModel.m */; };
 		187B754026CB81BF007B29B8 /* PPLabelItemCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 187B753926CB81BF007B29B8 /* PPLabelItemCell.m */; };
 		187B754126CB81BF007B29B8 /* PPLabelItemModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 187B753A26CB81BF007B29B8 /* PPLabelItemModel.m */; };
+		BE7F829C7F62F06ECE0C7F83 /* libPods-QJComponentsDome.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7AE536430E222442A5589C1B /* libPods-QJComponentsDome.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,6 +76,9 @@
 		187B753A26CB81BF007B29B8 /* PPLabelItemModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPLabelItemModel.m; sourceTree = "<group>"; };
 		187B753B26CB81BF007B29B8 /* PPLabelItemCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPLabelItemCell.h; sourceTree = "<group>"; };
 		187B753C26CB81BF007B29B8 /* PPTapMenumContainerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPTapMenumContainerView.h; sourceTree = "<group>"; };
+		7AE536430E222442A5589C1B /* libPods-QJComponentsDome.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-QJComponentsDome.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A0FAD20CF48CC89A202E2CBA /* Pods-QJComponentsDome.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QJComponentsDome.debug.xcconfig"; path = "Target Support Files/Pods-QJComponentsDome/Pods-QJComponentsDome.debug.xcconfig"; sourceTree = "<group>"; };
+		FC9CD9E6E977C3AA1085803B /* Pods-QJComponentsDome.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QJComponentsDome.release.xcconfig"; path = "Target Support Files/Pods-QJComponentsDome/Pods-QJComponentsDome.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +86,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BE7F829C7F62F06ECE0C7F83 /* libPods-QJComponentsDome.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -109,6 +114,8 @@
 				187B74F426CB7650007B29B8 /* QJComponentsDomeTests */,
 				187B74FF26CB7650007B29B8 /* QJComponentsDomeUITests */,
 				187B74D726CB764B007B29B8 /* Products */,
+				429FDC66F80A55BF2A2E409A /* Pods */,
+				AAE0D1BF52122FD6891414F9 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -209,8 +216,8 @@
 		187B753226CB81BF007B29B8 /* BaseItem */ = {
 			isa = PBXGroup;
 			children = (
-				187B753426CB81BF007B29B8 /* PPTapMenumBaseCell.m */,
 				187B753526CB81BF007B29B8 /* PPTapMenumBaseCell.h */,
+				187B753426CB81BF007B29B8 /* PPTapMenumBaseCell.m */,
 				187B753326CB81BF007B29B8 /* PPTapMenumBaseModel.h */,
 				187B753626CB81BF007B29B8 /* PPTapMenumBaseModel.m */,
 			);
@@ -228,6 +235,24 @@
 			path = LabelItem;
 			sourceTree = "<group>";
 		};
+		429FDC66F80A55BF2A2E409A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A0FAD20CF48CC89A202E2CBA /* Pods-QJComponentsDome.debug.xcconfig */,
+				FC9CD9E6E977C3AA1085803B /* Pods-QJComponentsDome.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		AAE0D1BF52122FD6891414F9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7AE536430E222442A5589C1B /* libPods-QJComponentsDome.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -235,6 +260,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 187B750526CB7650007B29B8 /* Build configuration list for PBXNativeTarget "QJComponentsDome" */;
 			buildPhases = (
+				5BC0ED3B415844B46DC13773 /* [CP] Check Pods Manifest.lock */,
 				187B74D226CB764B007B29B8 /* Sources */,
 				187B74D326CB764B007B29B8 /* Frameworks */,
 				187B74D426CB764B007B29B8 /* Resources */,
@@ -351,6 +377,31 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5BC0ED3B415844B46DC13773 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-QJComponentsDome-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		187B74D226CB764B007B29B8 /* Sources */ = {
@@ -536,6 +587,7 @@
 		};
 		187B750626CB7650007B29B8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A0FAD20CF48CC89A202E2CBA /* Pods-QJComponentsDome.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -553,6 +605,7 @@
 		};
 		187B750726CB7650007B29B8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FC9CD9E6E977C3AA1085803B /* Pods-QJComponentsDome.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
