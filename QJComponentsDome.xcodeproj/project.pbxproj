@@ -30,6 +30,7 @@
 		187B756626CCA472007B29B8 /* QJBaseTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 187B756026CCA472007B29B8 /* QJBaseTableViewCell.m */; };
 		187B756726CCA472007B29B8 /* QJBaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 187B756126CCA472007B29B8 /* QJBaseModel.m */; };
 		187B756F26CCA8DF007B29B8 /* QJWavyLinesView.m in Sources */ = {isa = PBXBuildFile; fileRef = 187B756D26CCA8DF007B29B8 /* QJWavyLinesView.m */; };
+		187B757126CCAAE9007B29B8 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 187B757026CCAAE9007B29B8 /* README.md */; };
 		BE7F829C7F62F06ECE0C7F83 /* libPods-QJComponentsDome.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7AE536430E222442A5589C1B /* libPods-QJComponentsDome.a */; };
 /* End PBXBuildFile section */
 
@@ -97,6 +98,7 @@
 		187B756126CCA472007B29B8 /* QJBaseModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QJBaseModel.m; sourceTree = "<group>"; };
 		187B756D26CCA8DF007B29B8 /* QJWavyLinesView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QJWavyLinesView.m; sourceTree = "<group>"; };
 		187B756E26CCA8DF007B29B8 /* QJWavyLinesView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QJWavyLinesView.h; sourceTree = "<group>"; };
+		187B757026CCAAE9007B29B8 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = SOURCE_ROOT; };
 		7AE536430E222442A5589C1B /* libPods-QJComponentsDome.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-QJComponentsDome.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0FAD20CF48CC89A202E2CBA /* Pods-QJComponentsDome.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QJComponentsDome.debug.xcconfig"; path = "Target Support Files/Pods-QJComponentsDome/Pods-QJComponentsDome.debug.xcconfig"; sourceTree = "<group>"; };
 		FC9CD9E6E977C3AA1085803B /* Pods-QJComponentsDome.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QJComponentsDome.release.xcconfig"; path = "Target Support Files/Pods-QJComponentsDome/Pods-QJComponentsDome.release.xcconfig"; sourceTree = "<group>"; };
@@ -171,6 +173,7 @@
 		187B751026CB7C4D007B29B8 /* QJComponentsDome */ = {
 			isa = PBXGroup;
 			children = (
+				187B757026CCAAE9007B29B8 /* README.md */,
 				187B751926CB7C4D007B29B8 /* Components */,
 				187B751126CB7C4D007B29B8 /* AppDelegate.h */,
 				187B751226CB7C4D007B29B8 /* Assets.xcassets */,
@@ -416,6 +419,7 @@
 			files = (
 				187B752626CB7C4D007B29B8 /* Main.storyboard in Resources */,
 				187B752226CB7C4D007B29B8 /* Assets.xcassets in Resources */,
+				187B757126CCAAE9007B29B8 /* README.md in Resources */,
 				187B752526CB7C4D007B29B8 /* LaunchScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
