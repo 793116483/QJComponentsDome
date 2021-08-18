@@ -23,6 +23,12 @@
 		187B753F26CB81BF007B29B8 /* PPTapMenumBaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 187B753626CB81BF007B29B8 /* PPTapMenumBaseModel.m */; };
 		187B754026CB81BF007B29B8 /* PPLabelItemCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 187B753926CB81BF007B29B8 /* PPLabelItemCell.m */; };
 		187B754126CB81BF007B29B8 /* PPLabelItemModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 187B753A26CB81BF007B29B8 /* PPLabelItemModel.m */; };
+		187B756226CCA472007B29B8 /* QJGroupModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 187B755826CCA472007B29B8 /* QJGroupModel.m */; };
+		187B756326CCA472007B29B8 /* QJArrowModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 187B755926CCA472007B29B8 /* QJArrowModel.m */; };
+		187B756426CCA472007B29B8 /* QJBaseTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 187B755C26CCA472007B29B8 /* QJBaseTableViewController.m */; };
+		187B756526CCA472007B29B8 /* QJSwitchModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 187B755E26CCA472007B29B8 /* QJSwitchModel.m */; };
+		187B756626CCA472007B29B8 /* QJBaseTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 187B756026CCA472007B29B8 /* QJBaseTableViewCell.m */; };
+		187B756726CCA472007B29B8 /* QJBaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 187B756126CCA472007B29B8 /* QJBaseModel.m */; };
 		BE7F829C7F62F06ECE0C7F83 /* libPods-QJComponentsDome.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7AE536430E222442A5589C1B /* libPods-QJComponentsDome.a */; };
 /* End PBXBuildFile section */
 
@@ -76,6 +82,18 @@
 		187B753A26CB81BF007B29B8 /* PPLabelItemModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPLabelItemModel.m; sourceTree = "<group>"; };
 		187B753B26CB81BF007B29B8 /* PPLabelItemCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPLabelItemCell.h; sourceTree = "<group>"; };
 		187B753C26CB81BF007B29B8 /* PPTapMenumContainerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPTapMenumContainerView.h; sourceTree = "<group>"; };
+		187B755626CCA472007B29B8 /* QJSwitchModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QJSwitchModel.h; sourceTree = "<group>"; };
+		187B755726CCA472007B29B8 /* QJBaseTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QJBaseTableViewController.h; sourceTree = "<group>"; };
+		187B755826CCA472007B29B8 /* QJGroupModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QJGroupModel.m; sourceTree = "<group>"; };
+		187B755926CCA472007B29B8 /* QJArrowModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QJArrowModel.m; sourceTree = "<group>"; };
+		187B755A26CCA472007B29B8 /* QJBaseModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QJBaseModel.h; sourceTree = "<group>"; };
+		187B755B26CCA472007B29B8 /* QJBaseTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QJBaseTableViewCell.h; sourceTree = "<group>"; };
+		187B755C26CCA472007B29B8 /* QJBaseTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QJBaseTableViewController.m; sourceTree = "<group>"; };
+		187B755D26CCA472007B29B8 /* QJGroupModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QJGroupModel.h; sourceTree = "<group>"; };
+		187B755E26CCA472007B29B8 /* QJSwitchModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QJSwitchModel.m; sourceTree = "<group>"; };
+		187B755F26CCA472007B29B8 /* QJArrowModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QJArrowModel.h; sourceTree = "<group>"; };
+		187B756026CCA472007B29B8 /* QJBaseTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QJBaseTableViewCell.m; sourceTree = "<group>"; };
+		187B756126CCA472007B29B8 /* QJBaseModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QJBaseModel.m; sourceTree = "<group>"; };
 		7AE536430E222442A5589C1B /* libPods-QJComponentsDome.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-QJComponentsDome.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0FAD20CF48CC89A202E2CBA /* Pods-QJComponentsDome.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QJComponentsDome.debug.xcconfig"; path = "Target Support Files/Pods-QJComponentsDome/Pods-QJComponentsDome.debug.xcconfig"; sourceTree = "<group>"; };
 		FC9CD9E6E977C3AA1085803B /* Pods-QJComponentsDome.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QJComponentsDome.release.xcconfig"; path = "Target Support Files/Pods-QJComponentsDome/Pods-QJComponentsDome.release.xcconfig"; sourceTree = "<group>"; };
@@ -179,6 +197,7 @@
 		187B751A26CB7C4D007B29B8 /* 容器 */ = {
 			isa = PBXGroup;
 			children = (
+				187B755526CCA472007B29B8 /* QJBaseTableViewController */,
 				187B753026CB81BF007B29B8 /* TapMenuContainerView */,
 			);
 			path = "容器";
@@ -235,13 +254,31 @@
 			path = LabelItem;
 			sourceTree = "<group>";
 		};
+		187B755526CCA472007B29B8 /* QJBaseTableViewController */ = {
+			isa = PBXGroup;
+			children = (
+				187B755726CCA472007B29B8 /* QJBaseTableViewController.h */,
+				187B755C26CCA472007B29B8 /* QJBaseTableViewController.m */,
+				187B755D26CCA472007B29B8 /* QJGroupModel.h */,
+				187B755826CCA472007B29B8 /* QJGroupModel.m */,
+				187B755A26CCA472007B29B8 /* QJBaseModel.h */,
+				187B756126CCA472007B29B8 /* QJBaseModel.m */,
+				187B755626CCA472007B29B8 /* QJSwitchModel.h */,
+				187B755E26CCA472007B29B8 /* QJSwitchModel.m */,
+				187B755F26CCA472007B29B8 /* QJArrowModel.h */,
+				187B755926CCA472007B29B8 /* QJArrowModel.m */,
+				187B755B26CCA472007B29B8 /* QJBaseTableViewCell.h */,
+				187B756026CCA472007B29B8 /* QJBaseTableViewCell.m */,
+			);
+			path = QJBaseTableViewController;
+			sourceTree = "<group>";
+		};
 		429FDC66F80A55BF2A2E409A /* Pods */ = {
 			isa = PBXGroup;
 			children = (
 				A0FAD20CF48CC89A202E2CBA /* Pods-QJComponentsDome.debug.xcconfig */,
 				FC9CD9E6E977C3AA1085803B /* Pods-QJComponentsDome.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -409,15 +446,21 @@
 			buildActionMask = 2147483647;
 			files = (
 				187B753D26CB81BF007B29B8 /* PPTapMenumContainerView.m in Sources */,
+				187B756526CCA472007B29B8 /* QJSwitchModel.m in Sources */,
 				187B753E26CB81BF007B29B8 /* PPTapMenumBaseCell.m in Sources */,
 				187B754126CB81BF007B29B8 /* PPLabelItemModel.m in Sources */,
 				187B752826CB7C4D007B29B8 /* AppDelegate.m in Sources */,
 				187B753F26CB81BF007B29B8 /* PPTapMenumBaseModel.m in Sources */,
 				187B752326CB7C4D007B29B8 /* ViewController.m in Sources */,
+				187B756326CCA472007B29B8 /* QJArrowModel.m in Sources */,
 				187B752726CB7C4D007B29B8 /* main.m in Sources */,
+				187B756626CCA472007B29B8 /* QJBaseTableViewCell.m in Sources */,
 				187B752C26CB7C89007B29B8 /* UIViewController+PPPresentTransition.m in Sources */,
+				187B756426CCA472007B29B8 /* QJBaseTableViewController.m in Sources */,
 				187B754026CB81BF007B29B8 /* PPLabelItemCell.m in Sources */,
+				187B756726CCA472007B29B8 /* QJBaseModel.m in Sources */,
 				187B752426CB7C4D007B29B8 /* SceneDelegate.m in Sources */,
+				187B756226CCA472007B29B8 /* QJGroupModel.m in Sources */,
 				187B752F26CB7CCB007B29B8 /* PPMultiTargetProxy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
