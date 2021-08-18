@@ -13,3 +13,7 @@
 
 ### QJBaseTableViewController
     - tableView 相关
+    
+## 图形
+### QJWavyLinesView
+    - 声音波形图

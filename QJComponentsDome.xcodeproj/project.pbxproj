@@ -29,6 +29,7 @@
 		187B756526CCA472007B29B8 /* QJSwitchModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 187B755E26CCA472007B29B8 /* QJSwitchModel.m */; };
 		187B756626CCA472007B29B8 /* QJBaseTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 187B756026CCA472007B29B8 /* QJBaseTableViewCell.m */; };
 		187B756726CCA472007B29B8 /* QJBaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 187B756126CCA472007B29B8 /* QJBaseModel.m */; };
+		187B756F26CCA8DF007B29B8 /* QJWavyLinesView.m in Sources */ = {isa = PBXBuildFile; fileRef = 187B756D26CCA8DF007B29B8 /* QJWavyLinesView.m */; };
 		BE7F829C7F62F06ECE0C7F83 /* libPods-QJComponentsDome.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7AE536430E222442A5589C1B /* libPods-QJComponentsDome.a */; };
 /* End PBXBuildFile section */
 
@@ -94,6 +95,8 @@
 		187B755F26CCA472007B29B8 /* QJArrowModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QJArrowModel.h; sourceTree = "<group>"; };
 		187B756026CCA472007B29B8 /* QJBaseTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QJBaseTableViewCell.m; sourceTree = "<group>"; };
 		187B756126CCA472007B29B8 /* QJBaseModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QJBaseModel.m; sourceTree = "<group>"; };
+		187B756D26CCA8DF007B29B8 /* QJWavyLinesView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QJWavyLinesView.m; sourceTree = "<group>"; };
+		187B756E26CCA8DF007B29B8 /* QJWavyLinesView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QJWavyLinesView.h; sourceTree = "<group>"; };
 		7AE536430E222442A5589C1B /* libPods-QJComponentsDome.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-QJComponentsDome.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0FAD20CF48CC89A202E2CBA /* Pods-QJComponentsDome.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QJComponentsDome.debug.xcconfig"; path = "Target Support Files/Pods-QJComponentsDome/Pods-QJComponentsDome.debug.xcconfig"; sourceTree = "<group>"; };
 		FC9CD9E6E977C3AA1085803B /* Pods-QJComponentsDome.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QJComponentsDome.release.xcconfig"; path = "Target Support Files/Pods-QJComponentsDome/Pods-QJComponentsDome.release.xcconfig"; sourceTree = "<group>"; };
@@ -187,6 +190,7 @@
 		187B751926CB7C4D007B29B8 /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				187B756826CCA5E0007B29B8 /* 图形 */,
 				187B751A26CB7C4D007B29B8 /* 容器 */,
 				187B751B26CB7C4D007B29B8 /* Poxry消息转发 */,
 				187B751C26CB7C4D007B29B8 /* UIViewController */,
@@ -271,6 +275,23 @@
 				187B756026CCA472007B29B8 /* QJBaseTableViewCell.m */,
 			);
 			path = QJBaseTableViewController;
+			sourceTree = "<group>";
+		};
+		187B756826CCA5E0007B29B8 /* 图形 */ = {
+			isa = PBXGroup;
+			children = (
+				187B756C26CCA8DF007B29B8 /* 声音波形图 */,
+			);
+			path = "图形";
+			sourceTree = "<group>";
+		};
+		187B756C26CCA8DF007B29B8 /* 声音波形图 */ = {
+			isa = PBXGroup;
+			children = (
+				187B756E26CCA8DF007B29B8 /* QJWavyLinesView.h */,
+				187B756D26CCA8DF007B29B8 /* QJWavyLinesView.m */,
+			);
+			path = "声音波形图";
 			sourceTree = "<group>";
 		};
 		429FDC66F80A55BF2A2E409A /* Pods */ = {
@@ -448,6 +469,7 @@
 				187B753D26CB81BF007B29B8 /* PPTapMenumContainerView.m in Sources */,
 				187B756526CCA472007B29B8 /* QJSwitchModel.m in Sources */,
 				187B753E26CB81BF007B29B8 /* PPTapMenumBaseCell.m in Sources */,
+				187B756F26CCA8DF007B29B8 /* QJWavyLinesView.m in Sources */,
 				187B754126CB81BF007B29B8 /* PPLabelItemModel.m in Sources */,
 				187B752826CB7C4D007B29B8 /* AppDelegate.m in Sources */,
 				187B753F26CB81BF007B29B8 /* PPTapMenumBaseModel.m in Sources */,
