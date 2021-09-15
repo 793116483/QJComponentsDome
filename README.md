@@ -1,6 +1,10 @@
 # QJComponentsDome
 ## 封装的一些常用的组件功能集合
 
+### 分类
+#### 1. NSObject+PPObserver.h
+    - KVO功能
+
 ### UIViewController+PPPresentTransition.h 
     - 用于当 UIViewController modal 或 push 方式展示时，实际都是以 push 方式展示，但 modal 的效果还是保留
     
