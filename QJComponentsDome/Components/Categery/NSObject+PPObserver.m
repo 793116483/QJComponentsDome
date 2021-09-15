@@ -29,7 +29,7 @@
 /// 是否指定了 target 被释放时 didChangedValueBlock 监听被移除
 @property (nonatomic)        BOOL removeWhenTargetDalloc ;
 /// 回调block
-@property (nonatomic , strong) void (^didChangedValueBlock)(void) ;
+@property (nonatomic , strong) void (^didChangedValueBlock)(PPObjectObserverModel * observerModel) ;
 
 @end
 
@@ -53,7 +53,7 @@
         }
         
         if (observerModel.didChangedValueBlock) {
-            observerModel.didChangedValueBlock() ;
+            observerModel.didChangedValueBlock(observerModel) ;
             
         }else if ([observerModel.target respondsToSelector:observerModel.action]) {
             
@@ -72,14 +72,22 @@
 }
 
 #pragma mark - 添加 和 删除 监听功能
--(void)addObserverForKeyPath:(NSString *)keyPath didChangedValueBlock:(void (^)(void))didChangedValueBlock {
-    [self addObserverForKeyPath:keyPath didChangedValueBlock:didChangedValueBlock removeObserverWhenTargetDalloc:nil];
+-(void)addObserverForKeyPath:(NSString *)keyPath
+                    userInfo:(nullable id)userInfo
+        didChangedValueBlock:(nonnull void (^)(PPObjectObserverModel * _Nonnull))didChangedValueBlock {
+    
+    [self addObserverForKeyPath:keyPath userInfo:userInfo didChangedValueBlock:didChangedValueBlock removeObserverWhenTargetDalloc:nil];
 }
 
--(void)addObserverForKeyPath:(NSString *)keyPath didChangedValueBlock:(void (^)(void))didChangedValueBlock removeObserverWhenTargetDalloc:(nullable id)target{
+-(void)addObserverForKeyPath:(NSString *)keyPath
+                    userInfo:(nullable id)userInfo
+        didChangedValueBlock:(nonnull void (^)(PPObjectObserverModel * _Nonnull))didChangedValueBlock
+removeObserverWhenTargetDalloc:(nullable id)target{
+    
     if (!keyPath || !didChangedValueBlock) {
         return;
     }
+    
     [self removeLoseEfficacyModelsWithKeyPath:keyPath];
         
     NSMutableArray * observers = [self privacyKeyObserverArrayWithKeyPath:keyPath];
@@ -93,6 +101,7 @@
     model.ofObject = self ;
     model.observer = [PPPrivacyObserver new] ;
     model.keyPath = keyPath ;
+    model.userInfo = userInfo ;
     model.didChangedValueBlock = didChangedValueBlock ;
     model.target = target ;
     model.removeWhenTargetDalloc = target != nil ;
@@ -102,7 +111,11 @@
     [self addObserver:model.observer forKeyPath:keyPath options:NSKeyValueObservingOptionNew context:nil];
 }
 
--(void)addObserverForKeyPath:(NSString *)keyPath target:(id)target action:(SEL)action {
+-(void)addObserverForKeyPath:(NSString *)keyPath
+                    userInfo:(nullable id)userInfo
+                      target:(nonnull id)target
+                      action:(nonnull SEL)action{
+    
     if (!keyPath || !target || !action || ![target respondsToSelector:action]) {
         return;
     }
@@ -119,6 +132,7 @@
     model.ofObject = self ;
     model.observer = [PPPrivacyObserver new] ;
     model.keyPath = keyPath ;
+    model.userInfo = userInfo ;
     model.target = target ;
     model.action = action ;
     [observers addObject:model];
