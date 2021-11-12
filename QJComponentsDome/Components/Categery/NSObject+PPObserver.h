@@ -56,11 +56,11 @@ removeObserverWhenTargetDalloc:(nullable id)target;
 /// 用户绑定的数据
 @property (nonatomic , strong , nullable) id userInfo ;
 
+@property (nonatomic , weak) NSDictionary<NSKeyValueChangeKey,id> * change ;
+
 /// 被观察的对象
 -(id)object ;
-
 /// 观察的属性
 -(NSString *)keyPath ;
-
 @end
 NS_ASSUME_NONNULL_END

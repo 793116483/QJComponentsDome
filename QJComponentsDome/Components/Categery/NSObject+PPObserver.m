@@ -47,10 +47,12 @@
 
     NSMutableArray * observers = [self privacyKeyObserverArrayWithKeyPath:keyPath];
     
-    for (PPObjectObserverModel * observerModel in observers) {
+    [observers enumerateObjectsUsingBlock:^(PPObjectObserverModel * observerModel, NSUInteger idx, BOOL * _Nonnull stop) {
         if (object != observerModel.ofObject) {
-            continue;
+            return;
         }
+        
+        observerModel.change = change ;
         
         if (observerModel.didChangedValueBlock) {
             observerModel.didChangedValueBlock(observerModel) ;
@@ -68,7 +70,7 @@
             
             [invocation invoke];
         }
-    }
+    }];
 }
 
 #pragma mark - 添加 和 删除 监听功能
@@ -108,7 +110,7 @@ removeObserverWhenTargetDalloc:(nullable id)target{
     [observers addObject:model];
     
     // 监听
-    [self addObserver:model.observer forKeyPath:keyPath options:NSKeyValueObservingOptionNew context:nil];
+    [self addObserver:model.observer forKeyPath:keyPath options:NSKeyValueObservingOptionNew|NSKeyValueObservingOptionOld context:nil];
 }
 
 -(void)addObserverForKeyPath:(NSString *)keyPath
@@ -138,7 +140,7 @@ removeObserverWhenTargetDalloc:(nullable id)target{
     [observers addObject:model];
     
     // 监听
-    [self addObserver:model.observer forKeyPath:keyPath options:NSKeyValueObservingOptionNew context:nil];
+    [self addObserver:model.observer forKeyPath:keyPath options:NSKeyValueObservingOptionNew|NSKeyValueObservingOptionOld context:nil];
 }
 
 -(void)removeObserverForKeyPath:(NSString *)keyPath {
