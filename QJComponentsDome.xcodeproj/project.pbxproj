@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		187172AF273E4DE500C72E9B /* PPExtensibleLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 187172AE273E4DE500C72E9B /* PPExtensibleLabel.m */; };
 		187B74F626CB7650007B29B8 /* QJComponentsDomeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 187B74F526CB7650007B29B8 /* QJComponentsDomeTests.m */; };
 		187B750126CB7650007B29B8 /* QJComponentsDomeUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 187B750026CB7650007B29B8 /* QJComponentsDomeUITests.m */; };
 		187B752226CB7C4D007B29B8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 187B751226CB7C4D007B29B8 /* Assets.xcassets */; };
@@ -53,6 +54,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		187172AD273E4DE500C72E9B /* PPExtensibleLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPExtensibleLabel.h; sourceTree = "<group>"; };
+		187172AE273E4DE500C72E9B /* PPExtensibleLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPExtensibleLabel.m; sourceTree = "<group>"; };
 		187B74D626CB764B007B29B8 /* QJComponentsDome.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QJComponentsDome.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		187B74F126CB7650007B29B8 /* QJComponentsDomeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QJComponentsDomeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		187B74F526CB7650007B29B8 /* QJComponentsDomeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QJComponentsDomeTests.m; sourceTree = "<group>"; };
@@ -133,6 +136,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		187172AB273E4DA700C72E9B /* UIKit基本类扩展 */ = {
+			isa = PBXGroup;
+			children = (
+				187172AC273E4DD700C72E9B /* UILabel */,
+			);
+			path = "UIKit基本类扩展";
+			sourceTree = "<group>";
+		};
+		187172AC273E4DD700C72E9B /* UILabel */ = {
+			isa = PBXGroup;
+			children = (
+				187172AD273E4DE500C72E9B /* PPExtensibleLabel.h */,
+				187172AE273E4DE500C72E9B /* PPExtensibleLabel.m */,
+			);
+			path = UILabel;
+			sourceTree = "<group>";
+		};
 		187B74CD26CB764B007B29B8 = {
 			isa = PBXGroup;
 			children = (
@@ -196,6 +216,7 @@
 		187B751926CB7C4D007B29B8 /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				187172AB273E4DA700C72E9B /* UIKit基本类扩展 */,
 				1895B58426F1BB7300741175 /* Categery */,
 				187B756826CCA5E0007B29B8 /* 图形 */,
 				187B751A26CB7C4D007B29B8 /* 容器 */,
@@ -496,6 +517,7 @@
 				187B756626CCA472007B29B8 /* QJBaseTableViewCell.m in Sources */,
 				187B752C26CB7C89007B29B8 /* UIViewController+PPPresentTransition.m in Sources */,
 				187B756426CCA472007B29B8 /* QJBaseTableViewController.m in Sources */,
+				187172AF273E4DE500C72E9B /* PPExtensibleLabel.m in Sources */,
 				1895B58726F1BB7300741175 /* NSObject+PPObserver.m in Sources */,
 				187B754026CB81BF007B29B8 /* PPLabelItemCell.m in Sources */,
 				187B756726CCA472007B29B8 /* QJBaseModel.m in Sources */,
