@@ -69,7 +69,6 @@
     toViewController.presenting = YES ;
     
     toViewController.appearMode = UIViewControllerAppearModeWithModal ;
-    viewControllerToPresent.appearMode = UIViewControllerAppearModeWithModal ;
     
     if (![[self class] isForbidAddTransitionForViewControllerClass:toViewController.class]) {
         toViewController.hasCustomTransition = YES ;
@@ -87,6 +86,8 @@
         }
         
     }else{
+        viewControllerToPresent.appearMode = UIViewControllerAppearModeWithModal ;
+
         [self _pp_presentViewController:viewControllerToPresent animated:flag completion:completion];
     }
     
@@ -312,7 +313,12 @@
             break;
         }
         default:
+        {
+            if (self == [UIApplication sharedApplication].keyWindow.rootViewController) {
+                [self dismissViewControllerAnimated:animation completion:completion];
+            }
             break;
+        }
     }
     
     [self clearData] ;
