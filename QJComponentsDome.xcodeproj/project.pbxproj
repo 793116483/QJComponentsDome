@@ -17,7 +17,7 @@
 		187B752626CB7C4D007B29B8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 187B751726CB7C4D007B29B8 /* Main.storyboard */; };
 		187B752726CB7C4D007B29B8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 187B751D26CB7C4D007B29B8 /* main.m */; };
 		187B752826CB7C4D007B29B8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 187B751E26CB7C4D007B29B8 /* AppDelegate.m */; };
-		187B752C26CB7C89007B29B8 /* UIViewController+PPPresentTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 187B752B26CB7C89007B29B8 /* UIViewController+PPPresentTransition.m */; };
+		187B752C26CB7C89007B29B8 /* UIViewController+PresentTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 187B752B26CB7C89007B29B8 /* UIViewController+PresentTransition.m */; };
 		187B752F26CB7CCB007B29B8 /* PPMultiTargetProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 187B752D26CB7CCB007B29B8 /* PPMultiTargetProxy.m */; };
 		187B753D26CB81BF007B29B8 /* PPTapMenumContainerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 187B753126CB81BF007B29B8 /* PPTapMenumContainerView.m */; };
 		187B753E26CB81BF007B29B8 /* PPTapMenumBaseCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 187B753426CB81BF007B29B8 /* PPTapMenumBaseCell.m */; };
@@ -32,6 +32,16 @@
 		187B756726CCA472007B29B8 /* QJBaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 187B756126CCA472007B29B8 /* QJBaseModel.m */; };
 		187B756F26CCA8DF007B29B8 /* QJWavyLinesView.m in Sources */ = {isa = PBXBuildFile; fileRef = 187B756D26CCA8DF007B29B8 /* QJWavyLinesView.m */; };
 		187B757126CCAAE9007B29B8 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 187B757026CCAAE9007B29B8 /* README.md */; };
+		18833E0D2834C43D00C2B2D3 /* PPTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 18833DFA2834C43D00C2B2D3 /* PPTransition.m */; };
+		18833E0E2834C43D00C2B2D3 /* PPSlideOutPanGestureRecognizer.m in Sources */ = {isa = PBXBuildFile; fileRef = 18833DFD2834C43D00C2B2D3 /* PPSlideOutPanGestureRecognizer.m */; };
+		18833E0F2834C43D00C2B2D3 /* PPNavigationControllerDelegateProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 18833DFE2834C43D00C2B2D3 /* PPNavigationControllerDelegateProxy.m */; };
+		18833E102834C43D00C2B2D3 /* PPWeakViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18833DFF2834C43D00C2B2D3 /* PPWeakViewController.m */; };
+		18833E112834C43D00C2B2D3 /* PPNavigationBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 18833E012834C43D00C2B2D3 /* PPNavigationBar.m */; };
+		18833E122834C43D00C2B2D3 /* UIViewController+PPOtherMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = 18833E042834C43D00C2B2D3 /* UIViewController+PPOtherMessage.m */; };
+		18833E132834C43D00C2B2D3 /* PPSlideInOutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18833E052834C43D00C2B2D3 /* PPSlideInOutViewController.m */; };
+		18833E142834C43D00C2B2D3 /* UIViewController+PPPresentTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 18833E092834C43D00C2B2D3 /* UIViewController+PPPresentTransition.m */; };
+		18833E152834C43D00C2B2D3 /* UINavigationController+PPPresentTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 18833E0B2834C43D00C2B2D3 /* UINavigationController+PPPresentTransition.m */; };
+		18833E1B2834CC5000C2B2D3 /* UIView+UIViewExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 18833E1A2834CC5000C2B2D3 /* UIView+UIViewExtension.m */; };
 		1895B58726F1BB7300741175 /* NSObject+PPObserver.m in Sources */ = {isa = PBXBuildFile; fileRef = 1895B58526F1BB7300741175 /* NSObject+PPObserver.m */; };
 		BE7F829C7F62F06ECE0C7F83 /* libPods-QJComponentsDome.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7AE536430E222442A5589C1B /* libPods-QJComponentsDome.a */; };
 /* End PBXBuildFile section */
@@ -74,8 +84,8 @@
 		187B751F26CB7C4D007B29B8 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		187B752026CB7C4D007B29B8 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		187B752126CB7C4D007B29B8 /* SceneDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
-		187B752A26CB7C89007B29B8 /* UIViewController+PPPresentTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+PPPresentTransition.h"; sourceTree = "<group>"; };
-		187B752B26CB7C89007B29B8 /* UIViewController+PPPresentTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+PPPresentTransition.m"; sourceTree = "<group>"; };
+		187B752A26CB7C89007B29B8 /* UIViewController+PresentTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+PresentTransition.h"; sourceTree = "<group>"; };
+		187B752B26CB7C89007B29B8 /* UIViewController+PresentTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+PresentTransition.m"; sourceTree = "<group>"; };
 		187B752D26CB7CCB007B29B8 /* PPMultiTargetProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPMultiTargetProxy.m; sourceTree = "<group>"; };
 		187B752E26CB7CCB007B29B8 /* PPMultiTargetProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPMultiTargetProxy.h; sourceTree = "<group>"; };
 		187B753126CB81BF007B29B8 /* PPTapMenumContainerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPTapMenumContainerView.m; sourceTree = "<group>"; };
@@ -103,6 +113,26 @@
 		187B756D26CCA8DF007B29B8 /* QJWavyLinesView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QJWavyLinesView.m; sourceTree = "<group>"; };
 		187B756E26CCA8DF007B29B8 /* QJWavyLinesView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QJWavyLinesView.h; sourceTree = "<group>"; };
 		187B757026CCAAE9007B29B8 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = SOURCE_ROOT; };
+		18833DF82834C43D00C2B2D3 /* PPWeakViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPWeakViewController.h; sourceTree = "<group>"; };
+		18833DFA2834C43D00C2B2D3 /* PPTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPTransition.m; sourceTree = "<group>"; };
+		18833DFB2834C43D00C2B2D3 /* PPSlideOutPanGestureRecognizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPSlideOutPanGestureRecognizer.h; sourceTree = "<group>"; };
+		18833DFC2834C43D00C2B2D3 /* PPTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPTransition.h; sourceTree = "<group>"; };
+		18833DFD2834C43D00C2B2D3 /* PPSlideOutPanGestureRecognizer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPSlideOutPanGestureRecognizer.m; sourceTree = "<group>"; };
+		18833DFE2834C43D00C2B2D3 /* PPNavigationControllerDelegateProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPNavigationControllerDelegateProxy.m; sourceTree = "<group>"; };
+		18833DFF2834C43D00C2B2D3 /* PPWeakViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPWeakViewController.m; sourceTree = "<group>"; };
+		18833E012834C43D00C2B2D3 /* PPNavigationBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPNavigationBar.m; sourceTree = "<group>"; };
+		18833E022834C43D00C2B2D3 /* PPNavigationBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPNavigationBar.h; sourceTree = "<group>"; };
+		18833E042834C43D00C2B2D3 /* UIViewController+PPOtherMessage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+PPOtherMessage.m"; sourceTree = "<group>"; };
+		18833E052834C43D00C2B2D3 /* PPSlideInOutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPSlideInOutViewController.m; sourceTree = "<group>"; };
+		18833E062834C43D00C2B2D3 /* UIViewController+PPPresentTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+PPPresentTransition.h"; sourceTree = "<group>"; };
+		18833E072834C43D00C2B2D3 /* UINavigationController+PPPresentTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+PPPresentTransition.h"; sourceTree = "<group>"; };
+		18833E082834C43D00C2B2D3 /* UIViewController+PPOtherMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+PPOtherMessage.h"; sourceTree = "<group>"; };
+		18833E092834C43D00C2B2D3 /* UIViewController+PPPresentTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+PPPresentTransition.m"; sourceTree = "<group>"; };
+		18833E0A2834C43D00C2B2D3 /* PPSlideInOutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPSlideInOutViewController.h; sourceTree = "<group>"; };
+		18833E0B2834C43D00C2B2D3 /* UINavigationController+PPPresentTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+PPPresentTransition.m"; sourceTree = "<group>"; };
+		18833E0C2834C43D00C2B2D3 /* PPNavigationControllerDelegateProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPNavigationControllerDelegateProxy.h; sourceTree = "<group>"; };
+		18833E192834CC5000C2B2D3 /* UIView+UIViewExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+UIViewExtension.h"; sourceTree = "<group>"; };
+		18833E1A2834CC5000C2B2D3 /* UIView+UIViewExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+UIViewExtension.m"; sourceTree = "<group>"; };
 		1895B58526F1BB7300741175 /* NSObject+PPObserver.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+PPObserver.m"; sourceTree = "<group>"; };
 		1895B58626F1BB7300741175 /* NSObject+PPObserver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+PPObserver.h"; sourceTree = "<group>"; };
 		7AE536430E222442A5589C1B /* libPods-QJComponentsDome.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-QJComponentsDome.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -247,8 +277,9 @@
 		187B751C26CB7C4D007B29B8 /* UIViewController */ = {
 			isa = PBXGroup;
 			children = (
-				187B752A26CB7C89007B29B8 /* UIViewController+PPPresentTransition.h */,
-				187B752B26CB7C89007B29B8 /* UIViewController+PPPresentTransition.m */,
+				18833DF72834C43D00C2B2D3 /* PPPresentTransition */,
+				187B752A26CB7C89007B29B8 /* UIViewController+PresentTransition.h */,
+				187B752B26CB7C89007B29B8 /* UIViewController+PresentTransition.m */,
 			);
 			path = UIViewController;
 			sourceTree = "<group>";
@@ -322,11 +353,62 @@
 			path = "声音波形图";
 			sourceTree = "<group>";
 		};
+		18833DF72834C43D00C2B2D3 /* PPPresentTransition */ = {
+			isa = PBXGroup;
+			children = (
+				18833DF92834C43D00C2B2D3 /* Animation */,
+				18833E002834C43D00C2B2D3 /* View */,
+				18833E032834C43D00C2B2D3 /* ViewController */,
+				18833E0C2834C43D00C2B2D3 /* PPNavigationControllerDelegateProxy.h */,
+				18833DFE2834C43D00C2B2D3 /* PPNavigationControllerDelegateProxy.m */,
+				18833DF82834C43D00C2B2D3 /* PPWeakViewController.h */,
+				18833DFF2834C43D00C2B2D3 /* PPWeakViewController.m */,
+			);
+			path = PPPresentTransition;
+			sourceTree = "<group>";
+		};
+		18833DF92834C43D00C2B2D3 /* Animation */ = {
+			isa = PBXGroup;
+			children = (
+				18833DFC2834C43D00C2B2D3 /* PPTransition.h */,
+				18833DFA2834C43D00C2B2D3 /* PPTransition.m */,
+				18833DFB2834C43D00C2B2D3 /* PPSlideOutPanGestureRecognizer.h */,
+				18833DFD2834C43D00C2B2D3 /* PPSlideOutPanGestureRecognizer.m */,
+			);
+			path = Animation;
+			sourceTree = "<group>";
+		};
+		18833E002834C43D00C2B2D3 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				18833E022834C43D00C2B2D3 /* PPNavigationBar.h */,
+				18833E012834C43D00C2B2D3 /* PPNavigationBar.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		18833E032834C43D00C2B2D3 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				18833E062834C43D00C2B2D3 /* UIViewController+PPPresentTransition.h */,
+				18833E092834C43D00C2B2D3 /* UIViewController+PPPresentTransition.m */,
+				18833E072834C43D00C2B2D3 /* UINavigationController+PPPresentTransition.h */,
+				18833E0B2834C43D00C2B2D3 /* UINavigationController+PPPresentTransition.m */,
+				18833E082834C43D00C2B2D3 /* UIViewController+PPOtherMessage.h */,
+				18833E042834C43D00C2B2D3 /* UIViewController+PPOtherMessage.m */,
+				18833E0A2834C43D00C2B2D3 /* PPSlideInOutViewController.h */,
+				18833E052834C43D00C2B2D3 /* PPSlideInOutViewController.m */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
 		1895B58426F1BB7300741175 /* Categery */ = {
 			isa = PBXGroup;
 			children = (
 				1895B58626F1BB7300741175 /* NSObject+PPObserver.h */,
 				1895B58526F1BB7300741175 /* NSObject+PPObserver.m */,
+				18833E192834CC5000C2B2D3 /* UIView+UIViewExtension.h */,
+				18833E1A2834CC5000C2B2D3 /* UIView+UIViewExtension.m */,
 			);
 			path = Categery;
 			sourceTree = "<group>";
@@ -504,26 +586,36 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18833E0F2834C43D00C2B2D3 /* PPNavigationControllerDelegateProxy.m in Sources */,
 				187B753D26CB81BF007B29B8 /* PPTapMenumContainerView.m in Sources */,
 				187B756526CCA472007B29B8 /* QJSwitchModel.m in Sources */,
+				18833E112834C43D00C2B2D3 /* PPNavigationBar.m in Sources */,
 				187B753E26CB81BF007B29B8 /* PPTapMenumBaseCell.m in Sources */,
 				187B756F26CCA8DF007B29B8 /* QJWavyLinesView.m in Sources */,
 				187B754126CB81BF007B29B8 /* PPLabelItemModel.m in Sources */,
 				187B752826CB7C4D007B29B8 /* AppDelegate.m in Sources */,
+				18833E0E2834C43D00C2B2D3 /* PPSlideOutPanGestureRecognizer.m in Sources */,
+				18833E142834C43D00C2B2D3 /* UIViewController+PPPresentTransition.m in Sources */,
+				18833E0D2834C43D00C2B2D3 /* PPTransition.m in Sources */,
 				187B753F26CB81BF007B29B8 /* PPTapMenumBaseModel.m in Sources */,
 				187B752326CB7C4D007B29B8 /* ViewController.m in Sources */,
 				187B756326CCA472007B29B8 /* QJArrowModel.m in Sources */,
 				187B752726CB7C4D007B29B8 /* main.m in Sources */,
 				187B756626CCA472007B29B8 /* QJBaseTableViewCell.m in Sources */,
-				187B752C26CB7C89007B29B8 /* UIViewController+PPPresentTransition.m in Sources */,
+				18833E152834C43D00C2B2D3 /* UINavigationController+PPPresentTransition.m in Sources */,
+				187B752C26CB7C89007B29B8 /* UIViewController+PresentTransition.m in Sources */,
 				187B756426CCA472007B29B8 /* QJBaseTableViewController.m in Sources */,
+				18833E1B2834CC5000C2B2D3 /* UIView+UIViewExtension.m in Sources */,
+				18833E102834C43D00C2B2D3 /* PPWeakViewController.m in Sources */,
 				187172AF273E4DE500C72E9B /* PPExtensibleLabel.m in Sources */,
 				1895B58726F1BB7300741175 /* NSObject+PPObserver.m in Sources */,
 				187B754026CB81BF007B29B8 /* PPLabelItemCell.m in Sources */,
 				187B756726CCA472007B29B8 /* QJBaseModel.m in Sources */,
+				18833E132834C43D00C2B2D3 /* PPSlideInOutViewController.m in Sources */,
 				187B752426CB7C4D007B29B8 /* SceneDelegate.m in Sources */,
 				187B756226CCA472007B29B8 /* QJGroupModel.m in Sources */,
 				187B752F26CB7CCB007B29B8 /* PPMultiTargetProxy.m in Sources */,
+				18833E122834C43D00C2B2D3 /* UIViewController+PPOtherMessage.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

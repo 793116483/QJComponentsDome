@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "PPNavigationBar.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -23,6 +24,9 @@ typedef enum{
     /// 以子控制器方式展示，被添加到 parent ViewController
     UIViewControllerAppearModeWithChild ,
     
+    /// 以底部半弹窗方式展示
+    UIViewControllerAppearModeWithSlideInOut ,
+    
 } UIViewControllerAppearMode;
 
 typedef void(^UIViewControllerCompletionBlock)(void);
@@ -37,9 +41,6 @@ typedef void(^UIViewControllerCompletionBlock)(void);
 
 /// 展示方式
 @property (nonatomic , readonly) UIViewControllerAppearMode appearMode ;
-
-/// 是否自定义转场动画
-@property (nonatomic , readonly) BOOL hasCustomTransition ;
 
 /// 显示控制器
 /// @param viewController 需要展示的控制器
@@ -73,6 +74,46 @@ typedef void(^UIViewControllerCompletionBlock)(void);
                             completion: (nullable UIViewControllerCompletionBlock)completion;
 -(void)disappearViewControllerAnimated:(BOOL)animation ;
 -(void)disappearViewController ;
+
+@end
+
+
+#pragma mark SlideInOut ViewController 相关
+
+static inline BOOL isIPhoneXSeries() {
+    BOOL iPhoneXSeries = NO;
+    if (UIDevice.currentDevice.userInterfaceIdiom != UIUserInterfaceIdiomPhone) {
+        return iPhoneXSeries;
+    }
+    if (@available(iOS 11.0, *)) {
+        UIWindow *mainWindow = [[[UIApplication sharedApplication] delegate] window];
+        if (mainWindow.safeAreaInsets.bottom > 0.0) {
+            iPhoneXSeries = YES;
+        }
+    }
+    return iPhoneXSeries;
+}
+
+#define kScreenWidth            [UIScreen mainScreen].bounds.size.width // MainScreen Heigh
+#define kScreenHeight           [UIScreen mainScreen].bounds.size.height  // MainScreen Width
+#define kNavigationBarHeight           (isIPhoneXSeries()?88.f:64.f)
+
+#define kSlideInOutNavigationBarHeight 44
+#define kSlideInOutViewControllerMaxHeight (kScreenHeight - kNavigationBarHeight - 15)
+
+@interface UIViewController (PPSlideInOut)
+
+/// UIViewControllerAppearModeWithSlideInOut 展示方式时的导航栏，否则为nil；title可随设置系统导航内容变动
+@property (nonatomic, strong, nullable, readonly) PPNavigationBar * slideInOutNavigationBar ;
+
+/// 控制器 view 的大小，默认为 CGSizeMake(kScreenWidth, kSlideInOutViewControllerMaxHeight)
+@property (nonatomic , assign ) CGSize slideInOutViewSize ;
+
+/// 当键盘显示时，view向上偏移y值
+@property (nonatomic , assign ) CGFloat slideInOutViewMoveOffsetYWhenKeyboardShow ;
+
+/// 展示当前控制器时，是否需要隐藏前一个以 UIViewControllerAppearModeWithSlideInOut 展示方式的控制器，默认为YES
+@property (nonatomic , assign ) BOOL hiddenPreSlideInOutViewControllerWhenAppear ;
 
 @end
 
