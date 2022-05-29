@@ -25,3 +25,14 @@
 ## UIKit基本类扩展
 ### 1. PPExtensibleLabel
     - 带展开Label内容的按钮
+    
+    
+## ReactNative 相关
+### PPNativeModuleHander
+    - RN 与 原生 之前的交互
+    
+### RN 热更新方案
+    - PPReactNativeUpdateManager 更新管理入口
+    - PPReactNativeDownloadManager 下载包管理 -》流转到热更新
+    - PPReactNativeInfoManager 热更新操作文件更新
+    - PPReactNativeFileHandler 文件管理器
