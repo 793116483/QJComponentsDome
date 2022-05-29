@@ -5,4 +5,6 @@ platform :ios, '8.0'
 target 'QJComponentsDome' do
     pod 'MJExtension'
     pod 'Masonry'
+    pod 'SSZipArchive'
+    pod 'React'
 end
