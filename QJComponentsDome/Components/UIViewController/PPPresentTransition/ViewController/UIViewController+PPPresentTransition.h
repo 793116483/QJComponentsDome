@@ -115,6 +115,9 @@ static inline BOOL isIPhoneXSeries() {
 /// 展示当前控制器时，是否需要隐藏前一个以 UIViewControllerAppearModeWithSlideInOut 展示方式的控制器，默认为YES
 @property (nonatomic , assign ) BOOL hiddenPreSlideInOutViewControllerWhenAppear ;
 
+/// 手动显示出半弹窗
+-(void)showSlideInOutViewIfNeed ;
+
 @end
 
 NS_ASSUME_NONNULL_END

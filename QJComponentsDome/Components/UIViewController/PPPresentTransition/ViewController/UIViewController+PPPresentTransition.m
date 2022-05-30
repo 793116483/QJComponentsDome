@@ -366,6 +366,15 @@
     }];
 }
 
+-(void)showSlideInOutViewIfNeed {
+    if (self.appearMode != UIViewControllerAppearModeWithSlideInOut || self.slideInOutFatherViewController.viewControllerShowed) {
+        return;
+    }
+    
+    [self.slideInOutFatherViewController showViewControllerAnimated:YES complation:^{
+    }];
+}
+
 #pragma mark - getter & setter
 -(void)setSlideInOutNavigationBar:(PPNavigationBar * _Nonnull)slideInOutNavigationBar {
     objc_setAssociatedObject(self, @selector(slideInOutNavigationBar), slideInOutNavigationBar, OBJC_ASSOCIATION_RETAIN_NONATOMIC) ;
@@ -408,6 +417,11 @@
 -(BOOL)hiddenPreSlideInOutViewControllerWhenAppear {
     NSNumber * hidden = objc_getAssociatedObject(self, @selector(hiddenPreSlideInOutViewControllerWhenAppear));
     if (!hidden) {
+        if (![NSStringFromClass(self.class) hasPrefix:@"PP"] // 所有非自定义的类都不隐藏前一个半弹窗
+            || [self.class isKindOfClass:UIAlertController.class]
+            || [self.class isKindOfClass:UIActivityViewController.class]) {
+            return NO;
+        }
         return YES;
     }
     return [hidden boolValue];
