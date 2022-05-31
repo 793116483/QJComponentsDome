@@ -150,7 +150,9 @@ static CGFloat kAnimationUnitDuration = 0.0004;
     self.contentView.frame = CGRectMake(x, y, width, height);
     self.animateDuration = height * kAnimationUnitDuration;
     
-    [self.viewController.view mas_updateConstraints:^(MASConstraintMaker *make) {
+    [self.viewController.view mas_remakeConstraints:^(MASConstraintMaker *make) {
+        make.top.equalTo(self.viewController.slideInOutNavigationBar.mas_bottom);
+        make.leading.trailing.equalTo(self.contentView);
         make.height.mas_equalTo(self.viewController.slideInOutViewSize.height);
     }];
 }
