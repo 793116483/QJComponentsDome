@@ -393,8 +393,8 @@
         // 最大高度
         slideInOutViewSize.height = kSlideInOutViewControllerMaxHeight;
     }
-    self.slideInOutFatherViewController.slideInOutViewSize = slideInOutViewSize;
     objc_setAssociatedObject(self, @selector(slideInOutViewSize), [NSValue valueWithCGSize:slideInOutViewSize], OBJC_ASSOCIATION_RETAIN_NONATOMIC) ;
+    self.slideInOutFatherViewController.slideInOutViewSize = slideInOutViewSize;
 }
 -(CGSize)slideInOutViewSize {
     NSValue * value = objc_getAssociatedObject(self, @selector(slideInOutViewSize));
