@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		186AE84C287875BD008BAE2B /* QJFormatTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 186AE84B287875BD008BAE2B /* QJFormatTextField.m */; };
 		187172AF273E4DE500C72E9B /* PPExtensibleLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 187172AE273E4DE500C72E9B /* PPExtensibleLabel.m */; };
 		187B74F626CB7650007B29B8 /* QJComponentsDomeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 187B74F526CB7650007B29B8 /* QJComponentsDomeTests.m */; };
 		187B750126CB7650007B29B8 /* QJComponentsDomeUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 187B750026CB7650007B29B8 /* QJComponentsDomeUITests.m */; };
@@ -75,6 +76,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		186AE84A287875BD008BAE2B /* QJFormatTextField.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QJFormatTextField.h; sourceTree = "<group>"; };
+		186AE84B287875BD008BAE2B /* QJFormatTextField.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QJFormatTextField.m; sourceTree = "<group>"; };
 		187172AD273E4DE500C72E9B /* PPExtensibleLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPExtensibleLabel.h; sourceTree = "<group>"; };
 		187172AE273E4DE500C72E9B /* PPExtensibleLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPExtensibleLabel.m; sourceTree = "<group>"; };
 		187B74D626CB764B007B29B8 /* QJComponentsDome.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QJComponentsDome.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -200,9 +203,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		186AE8492878756A008BAE2B /* UITextField */ = {
+			isa = PBXGroup;
+			children = (
+				186AE84A287875BD008BAE2B /* QJFormatTextField.h */,
+				186AE84B287875BD008BAE2B /* QJFormatTextField.m */,
+			);
+			path = UITextField;
+			sourceTree = "<group>";
+		};
 		187172AB273E4DA700C72E9B /* UIKit基本类扩展 */ = {
 			isa = PBXGroup;
 			children = (
+				186AE8492878756A008BAE2B /* UITextField */,
 				187172AC273E4DD700C72E9B /* UILabel */,
 			);
 			path = "UIKit基本类扩展";
@@ -702,6 +715,7 @@
 				187B752326CB7C4D007B29B8 /* ViewController.m in Sources */,
 				187B756326CCA472007B29B8 /* QJArrowModel.m in Sources */,
 				1893D5DE284373E1000129F1 /* DiffMatchPatch.m in Sources */,
+				186AE84C287875BD008BAE2B /* QJFormatTextField.m in Sources */,
 				187B752726CB7C4D007B29B8 /* main.m in Sources */,
 				1893D5E0284373E1000129F1 /* NSString+UriCompatibility.m in Sources */,
 				187B756626CCA472007B29B8 /* QJBaseTableViewCell.m in Sources */,

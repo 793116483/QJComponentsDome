@@ -25,6 +25,9 @@
 ## UIKit基本类扩展
 ### 1. PPExtensibleLabel
     - 带展开Label内容的按钮
+
+### 2. QJFormatTextField
+    - 显示指定格式的输入框
     
     
 ## ReactNative 相关
