@@ -29,6 +29,9 @@
 ### 2. QJFormatTextField
     - 显示指定格式的输入框
     
+### 3. PPGifLoaderManager
+    - 动图SDK封装
+    
     
 ## ReactNative 相关
 ### PPNativeModuleHander

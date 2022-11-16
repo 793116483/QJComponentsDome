@@ -7,6 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		18410B2F2924E62200CD5944 /* PPGifLoaderManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 18410B122924E62200CD5944 /* PPGifLoaderManager.m */; };
+		18410B302924E62200CD5944 /* PPGifMemoryCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 18410B142924E62200CD5944 /* PPGifMemoryCache.m */; };
+		18410B312924E62200CD5944 /* PPGifFrameMemoryCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 18410B172924E62200CD5944 /* PPGifFrameMemoryCache.m */; };
+		18410B322924E62200CD5944 /* PPGifCacheManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 18410B182924E62200CD5944 /* PPGifCacheManager.m */; };
+		18410B332924E62200CD5944 /* PPSysMemory.m in Sources */ = {isa = PBXBuildFile; fileRef = 18410B192924E62200CD5944 /* PPSysMemory.m */; };
+		18410B342924E62200CD5944 /* PPGifDiskCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 18410B1C2924E62200CD5944 /* PPGifDiskCache.m */; };
+		18410B352924E62200CD5944 /* UIImageView+PPGif.m in Sources */ = {isa = PBXBuildFile; fileRef = 18410B202924E62200CD5944 /* UIImageView+PPGif.m */; };
+		18410B362924E62200CD5944 /* UIImage+PPGifImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 18410B212924E62200CD5944 /* UIImage+PPGifImage.m */; };
+		18410B372924E62200CD5944 /* PPGifPlayerManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 18410B232924E62200CD5944 /* PPGifPlayerManager.m */; };
+		18410B382924E62200CD5944 /* PPGifImageViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 18410B282924E62200CD5944 /* PPGifImageViewModel.m */; };
+		18410B392924E62200CD5944 /* PPGifModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 18410B2A2924E62200CD5944 /* PPGifModel.m */; };
+		18410B3A2924E62200CD5944 /* PPGifFrameModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 18410B2C2924E62200CD5944 /* PPGifFrameModel.m */; };
+		18410B3D2924E7A000CD5944 /* NSString+MD5.m in Sources */ = {isa = PBXBuildFile; fileRef = 18410B3C2924E7A000CD5944 /* NSString+MD5.m */; };
 		186AE84C287875BD008BAE2B /* QJFormatTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 186AE84B287875BD008BAE2B /* QJFormatTextField.m */; };
 		187172AF273E4DE500C72E9B /* PPExtensibleLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 187172AE273E4DE500C72E9B /* PPExtensibleLabel.m */; };
 		187B74F626CB7650007B29B8 /* QJComponentsDomeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 187B74F526CB7650007B29B8 /* QJComponentsDomeTests.m */; };
@@ -76,6 +89,33 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		18410B122924E62200CD5944 /* PPGifLoaderManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPGifLoaderManager.m; sourceTree = "<group>"; };
+		18410B142924E62200CD5944 /* PPGifMemoryCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPGifMemoryCache.m; sourceTree = "<group>"; };
+		18410B152924E62200CD5944 /* PPSysMemory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPSysMemory.h; sourceTree = "<group>"; };
+		18410B162924E62200CD5944 /* PPGifDiskCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPGifDiskCache.h; sourceTree = "<group>"; };
+		18410B172924E62200CD5944 /* PPGifFrameMemoryCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPGifFrameMemoryCache.m; sourceTree = "<group>"; };
+		18410B182924E62200CD5944 /* PPGifCacheManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPGifCacheManager.m; sourceTree = "<group>"; };
+		18410B192924E62200CD5944 /* PPSysMemory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPSysMemory.m; sourceTree = "<group>"; };
+		18410B1A2924E62200CD5944 /* PPGifMemoryCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPGifMemoryCache.h; sourceTree = "<group>"; };
+		18410B1B2924E62200CD5944 /* PPGifFrameMemoryCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPGifFrameMemoryCache.h; sourceTree = "<group>"; };
+		18410B1C2924E62200CD5944 /* PPGifDiskCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPGifDiskCache.m; sourceTree = "<group>"; };
+		18410B1D2924E62200CD5944 /* PPGifCacheManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPGifCacheManager.h; sourceTree = "<group>"; };
+		18410B1F2924E62200CD5944 /* UIImage+PPGifImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+PPGifImage.h"; sourceTree = "<group>"; };
+		18410B202924E62200CD5944 /* UIImageView+PPGif.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+PPGif.m"; sourceTree = "<group>"; };
+		18410B212924E62200CD5944 /* UIImage+PPGifImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+PPGifImage.m"; sourceTree = "<group>"; };
+		18410B222924E62200CD5944 /* UIImageView+PPGif.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+PPGif.h"; sourceTree = "<group>"; };
+		18410B232924E62200CD5944 /* PPGifPlayerManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPGifPlayerManager.m; sourceTree = "<group>"; };
+		18410B242924E62200CD5944 /* PPGifLoaderManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPGifLoaderManager.h; sourceTree = "<group>"; };
+		18410B262924E62200CD5944 /* PPGifCommonType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPGifCommonType.h; sourceTree = "<group>"; };
+		18410B282924E62200CD5944 /* PPGifImageViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPGifImageViewModel.m; sourceTree = "<group>"; };
+		18410B292924E62200CD5944 /* PPGifFrameModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPGifFrameModel.h; sourceTree = "<group>"; };
+		18410B2A2924E62200CD5944 /* PPGifModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPGifModel.m; sourceTree = "<group>"; };
+		18410B2B2924E62200CD5944 /* PPGifImageViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPGifImageViewModel.h; sourceTree = "<group>"; };
+		18410B2C2924E62200CD5944 /* PPGifFrameModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPGifFrameModel.m; sourceTree = "<group>"; };
+		18410B2D2924E62200CD5944 /* PPGifModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPGifModel.h; sourceTree = "<group>"; };
+		18410B2E2924E62200CD5944 /* PPGifPlayerManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPGifPlayerManager.h; sourceTree = "<group>"; };
+		18410B3B2924E7A000CD5944 /* NSString+MD5.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+MD5.h"; sourceTree = "<group>"; };
+		18410B3C2924E7A000CD5944 /* NSString+MD5.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+MD5.m"; sourceTree = "<group>"; };
 		186AE84A287875BD008BAE2B /* QJFormatTextField.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QJFormatTextField.h; sourceTree = "<group>"; };
 		186AE84B287875BD008BAE2B /* QJFormatTextField.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QJFormatTextField.m; sourceTree = "<group>"; };
 		187172AD273E4DE500C72E9B /* PPExtensibleLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPExtensibleLabel.h; sourceTree = "<group>"; };
@@ -203,6 +243,72 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		18410B112924E62200CD5944 /* GifHelper */ = {
+			isa = PBXGroup;
+			children = (
+				18410B242924E62200CD5944 /* PPGifLoaderManager.h */,
+				18410B122924E62200CD5944 /* PPGifLoaderManager.m */,
+				18410B2E2924E62200CD5944 /* PPGifPlayerManager.h */,
+				18410B232924E62200CD5944 /* PPGifPlayerManager.m */,
+				18410B132924E62200CD5944 /* Cache */,
+				18410B1E2924E62200CD5944 /* Category */,
+				18410B252924E62200CD5944 /* Common */,
+				18410B272924E62200CD5944 /* GifModel */,
+			);
+			path = GifHelper;
+			sourceTree = "<group>";
+		};
+		18410B132924E62200CD5944 /* Cache */ = {
+			isa = PBXGroup;
+			children = (
+				18410B142924E62200CD5944 /* PPGifMemoryCache.m */,
+				18410B152924E62200CD5944 /* PPSysMemory.h */,
+				18410B162924E62200CD5944 /* PPGifDiskCache.h */,
+				18410B172924E62200CD5944 /* PPGifFrameMemoryCache.m */,
+				18410B182924E62200CD5944 /* PPGifCacheManager.m */,
+				18410B192924E62200CD5944 /* PPSysMemory.m */,
+				18410B1A2924E62200CD5944 /* PPGifMemoryCache.h */,
+				18410B1B2924E62200CD5944 /* PPGifFrameMemoryCache.h */,
+				18410B1C2924E62200CD5944 /* PPGifDiskCache.m */,
+				18410B1D2924E62200CD5944 /* PPGifCacheManager.h */,
+			);
+			path = Cache;
+			sourceTree = "<group>";
+		};
+		18410B1E2924E62200CD5944 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				18410B1F2924E62200CD5944 /* UIImage+PPGifImage.h */,
+				18410B202924E62200CD5944 /* UIImageView+PPGif.m */,
+				18410B212924E62200CD5944 /* UIImage+PPGifImage.m */,
+				18410B222924E62200CD5944 /* UIImageView+PPGif.h */,
+				18410B3B2924E7A000CD5944 /* NSString+MD5.h */,
+				18410B3C2924E7A000CD5944 /* NSString+MD5.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		18410B252924E62200CD5944 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				18410B262924E62200CD5944 /* PPGifCommonType.h */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		18410B272924E62200CD5944 /* GifModel */ = {
+			isa = PBXGroup;
+			children = (
+				18410B282924E62200CD5944 /* PPGifImageViewModel.m */,
+				18410B292924E62200CD5944 /* PPGifFrameModel.h */,
+				18410B2A2924E62200CD5944 /* PPGifModel.m */,
+				18410B2B2924E62200CD5944 /* PPGifImageViewModel.h */,
+				18410B2C2924E62200CD5944 /* PPGifFrameModel.m */,
+				18410B2D2924E62200CD5944 /* PPGifModel.h */,
+			);
+			path = GifModel;
+			sourceTree = "<group>";
+		};
 		186AE8492878756A008BAE2B /* UITextField */ = {
 			isa = PBXGroup;
 			children = (
@@ -293,6 +399,7 @@
 		187B751926CB7C4D007B29B8 /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				18410B112924E62200CD5944 /* GifHelper */,
 				1893D5BF284373E1000129F1 /* ReactNative */,
 				187172AB273E4DA700C72E9B /* UIKit基本类扩展 */,
 				1895B58426F1BB7300741175 /* Categery */,
@@ -699,25 +806,31 @@
 				18833E0F2834C43D00C2B2D3 /* PPNavigationControllerDelegateProxy.m in Sources */,
 				187B753D26CB81BF007B29B8 /* PPTapMenumContainerView.m in Sources */,
 				1893D5D9284373E1000129F1 /* PPReactNativeDownloadManager.m in Sources */,
+				18410B372924E62200CD5944 /* PPGifPlayerManager.m in Sources */,
 				187B756526CCA472007B29B8 /* QJSwitchModel.m in Sources */,
 				18833E112834C43D00C2B2D3 /* PPNavigationBar.m in Sources */,
 				187B753E26CB81BF007B29B8 /* PPTapMenumBaseCell.m in Sources */,
 				1893D5D8284373E1000129F1 /* PPReactNativeFileHandler.m in Sources */,
+				18410B312924E62200CD5944 /* PPGifFrameMemoryCache.m in Sources */,
 				1893D5DD284373E1000129F1 /* NSString+UnicharUtilities.m in Sources */,
+				18410B302924E62200CD5944 /* PPGifMemoryCache.m in Sources */,
 				187B756F26CCA8DF007B29B8 /* QJWavyLinesView.m in Sources */,
 				187B754126CB81BF007B29B8 /* PPLabelItemModel.m in Sources */,
 				187B752826CB7C4D007B29B8 /* AppDelegate.m in Sources */,
 				18833E0E2834C43D00C2B2D3 /* PPSlideOutPanGestureRecognizer.m in Sources */,
+				18410B352924E62200CD5944 /* UIImageView+PPGif.m in Sources */,
 				1893D5DC284373E1000129F1 /* DiffMatchPatchCFUtilities.c in Sources */,
 				18833E142834C43D00C2B2D3 /* UIViewController+PPPresentTransition.m in Sources */,
 				18833E0D2834C43D00C2B2D3 /* PPTransition.m in Sources */,
 				187B753F26CB81BF007B29B8 /* PPTapMenumBaseModel.m in Sources */,
 				187B752326CB7C4D007B29B8 /* ViewController.m in Sources */,
+				18410B322924E62200CD5944 /* PPGifCacheManager.m in Sources */,
 				187B756326CCA472007B29B8 /* QJArrowModel.m in Sources */,
 				1893D5DE284373E1000129F1 /* DiffMatchPatch.m in Sources */,
 				186AE84C287875BD008BAE2B /* QJFormatTextField.m in Sources */,
 				187B752726CB7C4D007B29B8 /* main.m in Sources */,
 				1893D5E0284373E1000129F1 /* NSString+UriCompatibility.m in Sources */,
+				18410B392924E62200CD5944 /* PPGifModel.m in Sources */,
 				187B756626CCA472007B29B8 /* QJBaseTableViewCell.m in Sources */,
 				18833E152834C43D00C2B2D3 /* UINavigationController+PPPresentTransition.m in Sources */,
 				1893D5DA284373E1000129F1 /* PPReactNativeInfoManager.m in Sources */,
@@ -725,19 +838,26 @@
 				187B756426CCA472007B29B8 /* QJBaseTableViewController.m in Sources */,
 				18833E1B2834CC5000C2B2D3 /* UIView+UIViewExtension.m in Sources */,
 				1893D5E1284373E1000129F1 /* NSMutableDictionary+DMPExtensions.m in Sources */,
+				18410B342924E62200CD5944 /* PPGifDiskCache.m in Sources */,
 				18833E102834C43D00C2B2D3 /* PPWeakViewController.m in Sources */,
+				18410B3D2924E7A000CD5944 /* NSString+MD5.m in Sources */,
 				187172AF273E4DE500C72E9B /* PPExtensibleLabel.m in Sources */,
 				1893D5DB284373E1000129F1 /* PPReactNativeUpdateManager.m in Sources */,
 				1895B58726F1BB7300741175 /* NSObject+PPObserver.m in Sources */,
+				18410B3A2924E62200CD5944 /* PPGifFrameModel.m in Sources */,
 				187B754026CB81BF007B29B8 /* PPLabelItemCell.m in Sources */,
 				187B756726CCA472007B29B8 /* QJBaseModel.m in Sources */,
+				18410B382924E62200CD5944 /* PPGifImageViewModel.m in Sources */,
 				1893D5E528437ADB000129F1 /* PPNativeModuleHander.m in Sources */,
 				18833E132834C43D00C2B2D3 /* PPSlideInOutViewController.m in Sources */,
+				18410B2F2924E62200CD5944 /* PPGifLoaderManager.m in Sources */,
 				1893D5DF284373E1000129F1 /* NSString+JavaSubstring.m in Sources */,
 				187B752426CB7C4D007B29B8 /* SceneDelegate.m in Sources */,
 				187B756226CCA472007B29B8 /* QJGroupModel.m in Sources */,
+				18410B362924E62200CD5944 /* UIImage+PPGifImage.m in Sources */,
 				187B752F26CB7CCB007B29B8 /* PPMultiTargetProxy.m in Sources */,
 				18833E122834C43D00C2B2D3 /* UIViewController+PPOtherMessage.m in Sources */,
+				18410B332924E62200CD5944 /* PPSysMemory.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
