@@ -20,6 +20,7 @@
 		18410B392924E62200CD5944 /* PPGifModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 18410B2A2924E62200CD5944 /* PPGifModel.m */; };
 		18410B3A2924E62200CD5944 /* PPGifFrameModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 18410B2C2924E62200CD5944 /* PPGifFrameModel.m */; };
 		18410B3D2924E7A000CD5944 /* NSString+MD5.m in Sources */ = {isa = PBXBuildFile; fileRef = 18410B3C2924E7A000CD5944 /* NSString+MD5.m */; };
+		184E8C722977DDCE00209707 /* PPCollectionViewCustomFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 184E8C702977DDCE00209707 /* PPCollectionViewCustomFlowLayout.m */; };
 		186AE84C287875BD008BAE2B /* QJFormatTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 186AE84B287875BD008BAE2B /* QJFormatTextField.m */; };
 		187172AF273E4DE500C72E9B /* PPExtensibleLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 187172AE273E4DE500C72E9B /* PPExtensibleLabel.m */; };
 		187B74F626CB7650007B29B8 /* QJComponentsDomeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 187B74F526CB7650007B29B8 /* QJComponentsDomeTests.m */; };
@@ -116,6 +117,8 @@
 		18410B2E2924E62200CD5944 /* PPGifPlayerManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPGifPlayerManager.h; sourceTree = "<group>"; };
 		18410B3B2924E7A000CD5944 /* NSString+MD5.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+MD5.h"; sourceTree = "<group>"; };
 		18410B3C2924E7A000CD5944 /* NSString+MD5.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+MD5.m"; sourceTree = "<group>"; };
+		184E8C702977DDCE00209707 /* PPCollectionViewCustomFlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPCollectionViewCustomFlowLayout.m; sourceTree = "<group>"; };
+		184E8C712977DDCE00209707 /* PPCollectionViewCustomFlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPCollectionViewCustomFlowLayout.h; sourceTree = "<group>"; };
 		186AE84A287875BD008BAE2B /* QJFormatTextField.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QJFormatTextField.h; sourceTree = "<group>"; };
 		186AE84B287875BD008BAE2B /* QJFormatTextField.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QJFormatTextField.m; sourceTree = "<group>"; };
 		187172AD273E4DE500C72E9B /* PPExtensibleLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPExtensibleLabel.h; sourceTree = "<group>"; };
@@ -309,6 +312,15 @@
 			path = GifModel;
 			sourceTree = "<group>";
 		};
+		184E8C6F2977DDB600209707 /* FlowLayout */ = {
+			isa = PBXGroup;
+			children = (
+				184E8C712977DDCE00209707 /* PPCollectionViewCustomFlowLayout.h */,
+				184E8C702977DDCE00209707 /* PPCollectionViewCustomFlowLayout.m */,
+			);
+			path = FlowLayout;
+			sourceTree = "<group>";
+		};
 		186AE8492878756A008BAE2B /* UITextField */ = {
 			isa = PBXGroup;
 			children = (
@@ -414,6 +426,7 @@
 		187B751A26CB7C4D007B29B8 /* 容器 */ = {
 			isa = PBXGroup;
 			children = (
+				184E8C6F2977DDB600209707 /* FlowLayout */,
 				187B755526CCA472007B29B8 /* QJBaseTableViewController */,
 				187B753026CB81BF007B29B8 /* TapMenuContainerView */,
 			);
@@ -804,6 +817,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				18833E0F2834C43D00C2B2D3 /* PPNavigationControllerDelegateProxy.m in Sources */,
+				184E8C722977DDCE00209707 /* PPCollectionViewCustomFlowLayout.m in Sources */,
 				187B753D26CB81BF007B29B8 /* PPTapMenumContainerView.m in Sources */,
 				1893D5D9284373E1000129F1 /* PPReactNativeDownloadManager.m in Sources */,
 				18410B372924E62200CD5944 /* PPGifPlayerManager.m in Sources */,
