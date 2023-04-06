@@ -32,6 +32,9 @@
 ### 3. PPGifLoaderManager
     - 动图SDK封装
     
+### 4. UIKitStatusModule
+    - 用于肤色等状态切换管理工具
+    
     
 ## ReactNative 相关
 ### PPNativeModuleHander
