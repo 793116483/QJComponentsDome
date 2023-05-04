@@ -84,6 +84,10 @@
     }
 }
 
+-(PPSkinStatusStyle)storageSkinStatusStyle {
+    PPSkinStatusStyle skinStatusStyle = [objc_getAssociatedObject(self, @selector(skinStatusStyle)) integerValue];
+    return skinStatusStyle;
+}
 
 -(PPSkinStatusStyle)skinStatusStyle {
     PPSkinStatusStyle skinStatusStyle = [objc_getAssociatedObject(self, @selector(skinStatusStyle)) integerValue];
@@ -105,7 +109,7 @@
     
     // 影响已经加入的子控件
     for (CALayer * subLayer in self.sublayers) {
-        if(!subLayer.isUserSetSkinStatusStyle && subLayer.skinStatusStyle != newSkinStatusStyle){
+        if(!subLayer.isUserSetSkinStatusStyle && subLayer.storageSkinStatusStyle != newSkinStatusStyle){
             subLayer.skinStatusStyle = newSkinStatusStyle;
             subLayer.isUserSetSkinStatusStyle = NO;
         }
@@ -123,7 +127,7 @@
 -(void)__pp_status_category_addSublayer:(CALayer *)subLayer {
     [self __pp_status_category_addSublayer:subLayer];
     
-    if(!subLayer.isUserSetSkinStatusStyle && subLayer.skinStatusStyle != self.skinStatusStyle){
+    if(!subLayer.isUserSetSkinStatusStyle && subLayer.storageSkinStatusStyle != self.skinStatusStyle){
         subLayer.skinStatusStyle = self.skinStatusStyle;
         subLayer.isUserSetSkinStatusStyle = NO;
     }

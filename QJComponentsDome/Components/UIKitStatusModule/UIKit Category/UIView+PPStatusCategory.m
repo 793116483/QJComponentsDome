@@ -81,6 +81,15 @@
     }
 }
 
+-(PPSkinStatusStyle)storageSkinStatusStyle {
+    if(self.isCustomNavigationBar){
+        // 自定义的导航栏，则直接取导航栏皮肤样式
+        return [PPStatusStackManager shareManager].currentStatusSetModel.navigationBarStyle == UIBarStyleBlack ? PPSkinStatusStyleDark : PPSkinStatusStyleLight;
+    }
+    
+    PPSkinStatusStyle skinStatusStyle = [objc_getAssociatedObject(self, @selector(skinStatusStyle)) integerValue];
+    return skinStatusStyle;
+}
 
 -(PPSkinStatusStyle)skinStatusStyle {
     
@@ -107,14 +116,14 @@
     // 标记设置了 skinStatusStyle
     self.isUserSetSkinStatusStyle = YES;
     
-    if(!self.layer.isUserSetSkinStatusStyle && self.layer.skinStatusStyle != newSkinStatusStyle){
+    if(!self.layer.isUserSetSkinStatusStyle && self.layer.storageSkinStatusStyle != newSkinStatusStyle){
         self.layer.skinStatusStyle = newSkinStatusStyle;
         self.layer.isUserSetSkinStatusStyle = NO;
     }
     
     // 影响已经加入的子控件
     for (UIView * subView in self.subviews) {
-        if(!subView.isUserSetSkinStatusStyle && subView.skinStatusStyle != newSkinStatusStyle){
+        if(!subView.isUserSetSkinStatusStyle && subView.storageSkinStatusStyle != newSkinStatusStyle){
             subView.skinStatusStyle = newSkinStatusStyle;
             subView.isUserSetSkinStatusStyle = NO;
         }
@@ -137,7 +146,7 @@
         subView.isCustomNavigationBar = isCustomNavigationBar;
     }
     
-    if(!subView.isUserSetSkinStatusStyle && subView.skinStatusStyle != self.skinStatusStyle){
+    if(!subView.isUserSetSkinStatusStyle && subView.storageSkinStatusStyle != self.skinStatusStyle){
         subView.skinStatusStyle = self.skinStatusStyle;
         subView.isUserSetSkinStatusStyle = NO;
     }
