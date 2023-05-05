@@ -16,6 +16,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 /// 皮肤样式，默认为当前顶部控制器的皮肤状态, 当设置该属性时会影响未设置的子 view 皮肤样式
 @property (nonatomic) PPSkinStatusStyle skinStatusStyle;
+@property (nonatomic,readonly) PPSkinStatusStyle storageSkinStatusStyle;
 
 /// 是否手动设置了皮肤样式
 @property (nonatomic) BOOL isUserSetSkinStatusStyle;

@@ -73,7 +73,7 @@
     if((currentStatusSetModel || oldStatusSetModel) && self.isViewLoaded){
         [self setNeedsStatusBarAppearanceUpdate];
         // 更新设置的默认值
-        if(self.view.skinStatusStyle != currentStatusSetModel.skinStatusStyle){
+        if(self.view.storageSkinStatusStyle != currentStatusSetModel.skinStatusStyle){
             self.view.skinStatusStyle = currentStatusSetModel.skinStatusStyle;
         }
         [self.view resetViewAndSubViewSkin];
